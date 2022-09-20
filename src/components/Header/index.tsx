@@ -1,5 +1,6 @@
 import { AddressBook, ClipboardText, House, TextAlignJustify, User, XCircle } from "phosphor-react";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { BoxToOut, NavBar } from "./style";
 
 export function Header() {
@@ -44,36 +45,36 @@ export function Header() {
             {(toggleMenu || screenWidth > 500 ) && (
                             <ul>
                             <li>
-                                    <a href="/">
+                                    <Link to="/">
                                         <BoxToOut>
                                             <House size={20}/>
                                             <p>Home</p>
                                         </BoxToOut>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="/about">
+                                    <Link to="/about">
                                         <BoxToOut>
                                             <User size={20}/>
                                             <p>About</p>
                                         </BoxToOut>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="/projects">
+                                    <Link to="/projects">
                                         <BoxToOut>
                                             <ClipboardText size={20}/>
                                             <p>Projects</p>
                                         </BoxToOut>
-                                    </a>
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a href="/resume">
+                                    <Link to="resume">
                                         <BoxToOut>
                                             <AddressBook size={20}/>
                                             <p>CV</p>
                                         </BoxToOut>
-                                    </a>
+                                    </Link>
                                 </li>
                             </ul>
             )}

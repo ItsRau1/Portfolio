@@ -6,11 +6,11 @@ import { DefaultTheme } from './styles/Themes/DefaultTheme'
 
 export function App() {
   return (
+    <BrowserRouter>
       <ThemeProvider theme={DefaultTheme}> 
-        <BrowserRouter>
-          <GlobalStyle />
-          <Router />
-        </BrowserRouter>
+        <GlobalStyle />
+        <Router />
       </ThemeProvider>
+    </BrowserRouter>
   )
 }

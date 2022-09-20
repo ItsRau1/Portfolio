@@ -5,7 +5,7 @@ import logo from "../../assets/home-main.png"
 import { EnvelopeSimple, GithubLogo, LinkedinLogo } from "phosphor-react";
 
 
-export function Home () {
+export function Home() {
     return (
         <div>
         <Container>
