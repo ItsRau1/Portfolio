@@ -9,6 +9,11 @@ background: ${props=>props.theme["grey-green"]};
 backdrop-filter: blur(10px);
 box-shadow: 2px 0 5px rgba(245, 245, 245, 0.05);
 
+@media (max-width: 768px) {
+       padding: 1rem 2rem;
+       gap: 2rem; 
+    }
+
     p {
         display: flex;
         align-items: center;
@@ -21,6 +26,12 @@ box-shadow: 2px 0 5px rgba(245, 245, 245, 0.05);
         letter-spacing: 1px;
 
         cursor: default;
+
+        @media (max-width: 768px) {
+            font-size: 0.8rem;
+            text-align: center;
+    }
+
     }
 
     p::after{
@@ -59,4 +70,5 @@ box-shadow: 2px 0 5px rgba(245, 245, 245, 0.05);
     a:hover{
         background: ${props=>props.theme["grey-500"]};
     }
+
 `

@@ -10,6 +10,10 @@ export const Container = styled.div`
     strong {
         color: ${props=>props.theme["green-200"]};
     }
+    @media (max-width: 768px) {
+        padding: 12rem 2rem 0;
+        overflow: hidden;
+    }
 
 `
 
@@ -19,6 +23,11 @@ export const TitleText = styled.section`
         letter-spacing: 1px;
         font-weight: 700;
         margin: 9rem 0 0;
+
+        @media (max-width: 768px) {
+            margin: 6rem 0 0;
+            text-align: center;
+        }
 `
 
 export const FormSection = styled.section`
@@ -27,6 +36,11 @@ export const FormSection = styled.section`
 
     margin: 4rem 0 0;
     width: 50%;
+
+    @media (max-width: 768px) {
+            margin: 3rem 0 2rem;
+            width: 100%;
+        }
     
     form{
         display: flex;

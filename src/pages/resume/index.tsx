@@ -1,17 +1,10 @@
 import { Container, DownloadSection, FormSection, TitleText } from "./style";
 import axios from "axios";
 
+import CV from "../../assets/CV.pdf"
+
 import { useForm } from "react-hook-form"
 
-interface dataType {
-    object: {
-        Name: string,
-        Contact: string,
-        Mesage?: string,
-    }
-
-
-}
 
 export function Resume () {
 
@@ -37,12 +30,12 @@ export function Resume () {
             <Container>
                 <DownloadSection>
                     <h1>Meu CV</h1>
-                    <a href="">
+                    <a href={CV} download="CV-Ruan-Dias.pdf">
                         Download
                     </a>
                 </DownloadSection>
                 <TitleText>
-                    <h1>Entre em contato Comigo!</h1>
+                    <h1>Entre em contato comigo!</h1>
                 </TitleText>
                 <FormSection>
                     <form onSubmit={handleSubmit(Submit)}>

@@ -1,10 +1,15 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    padding: 14rem 8rem 5rem;
+    padding: 7rem 8rem 5rem;
 
     strong {
         color: ${props=>props.theme["green-200"]};
+    }
+
+    @media (max-width: 768px) {
+        padding: 14rem 2rem 0;
+        overflow: hidden;
     }
 `
 
@@ -26,6 +31,14 @@ export const TextToHeader = styled.section`
         letter-spacing: 1px;
         text-align: left;
 
+    }
+
+    @media (max-width: 768px) {
+        padding: 0rem 1rem 0;
+        text-align: center;
+        p{
+            text-align: center;
+        }
     }
 `
 export const SkillSection = styled.div`
@@ -52,10 +65,17 @@ export const BoxToSkills = styled.section`
         border: 1px solid ${props=>props.theme["green-200"]};
         box-shadow: 0 0 10px 1px ${props=>props.theme["green-200"]};
     }
+    @media (max-width: 768px) {
+        margin: 0 0 3rem;
+    }
 `
 export const TittleSkill = styled.div`
     font-size: 4rem;
     color: ${props=>props.theme.white};
     text-align: center;
     margin: 0 0 4rem;
+
+    @media (max-width: 768px) {
+        font-size: 3.5rem;
+    }
 `

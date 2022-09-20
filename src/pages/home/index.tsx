@@ -1,9 +1,9 @@
-import { ContactBox, Container,HeaderBox, LinkBox, MainBox, MainSectionImage, MainSectionText, SectionImage, SectionText } from "./style";
+import { ContactBox, Container,HeaderBox, LinkBox, MainBox, MainSectionImage, MainSectionText, SectionImage, SectionText, TextAutoWriting } from "./style";
 import Typewriter from "react-typewriter-animate";
 
 import logo from "../../assets/home-main.png"
 import { EnvelopeSimple, GithubLogo, LinkedinLogo } from "phosphor-react";
-import { TextAutoWriting } from "../../components/Header/style";
+
 
 export function Home () {
     return (
@@ -13,7 +13,7 @@ export function Home () {
                 <SectionText>
                     <div>
                         <p><strong>Ola</strong>, como vai?</p>
-                        <p>Sou o Ruan Dias</p>
+                        <p>Sou Ruan Dias</p>
                     </div>
 
                     <TextAutoWriting>

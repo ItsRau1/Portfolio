@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const NavBar = styled.nav`
     display: flex;
     justify-content: flex-end;
-    gap: 4rem;
     padding: 1rem 7rem;
     position: fixed;
     width: 100vw;
@@ -42,17 +41,59 @@ export const NavBar = styled.nav`
     a:hover::after {
         width: 100%;
     }
+
+    button {
+        display: none;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        border: none;
+        color: ${props=>props.theme["green-200"]};
+        background: transparent;
+        font-size: 2rem;
+        line-height: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 4rem;
+    }
+
+    @media screen and (max-width: 500px){
+
+    padding: 2rem 1rem;
+    justify-content: center;
+
+
+
+    ul{
+        flex-direction: column;
+        height: auto;
+        gap: 0;
+        width: 100%;
+    }
+    li:nth-child(1){
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        margin-top: 50px;
+    }
+    li{
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.555);
+        text-align: center;
+        margin-right: 0px;
+        padding: 20px 0;
+    }
+    a{
+        width: 100%;  
+    }
+    button{
+        display: block;
+    }
+}
 `
 export const BoxToOut = styled.div`
     display: flex;
     align-items: center;
     gap: 0.5rem;
-`
-
-export const TextAutoWriting = styled.div`
-    margin: 3rem 0 0;
-
-    font-size: 3rem;
-    font-weight: 600;
-    color: ${props=>props.theme["green-200"]};
 `

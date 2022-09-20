@@ -1,4 +1,4 @@
-import { GithubLogo, LinkedinLogo } from "phosphor-react";
+import { GithubLogo, LinkedinLogo, WhatsappLogo } from "phosphor-react";
 import { FooterBox } from "./styles";
 
 export function Footer () {
@@ -11,6 +11,9 @@ export function Footer () {
                 </a>
                 <a href="https://github.com/ItsRau1" target="_blank" title="Github">
                     <GithubLogo />
+                </a>
+                <a href="https://wa.me/+5511999122243" target="_blank" title="WhatsApp">
+                    <WhatsappLogo />
                 </a>
             </div>
         </FooterBox>

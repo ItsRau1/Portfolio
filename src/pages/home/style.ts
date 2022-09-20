@@ -9,6 +9,11 @@ export const Container = styled.div`
         color:${props=>props.theme["green-200"]};
     }
 
+    @media (max-width: 768px) {
+        padding: 14rem 2rem 0;
+        overflow: hidden;
+    }
+
 `
 
 export const SectionText = styled.section`
@@ -23,11 +28,43 @@ export const SectionText = styled.section`
             color: ${props=>props.theme["green-200"]};
         }
     }
+
+    @media (max-width: 768px){
+        div{
+            p{
+                font-size: 3rem;
+            }
+        }
+    }
+
+
+    
+`
+
+
+export const TextAutoWriting = styled.div`
+    margin: 3rem 0 0;
+
+    font-size: 3rem;
+    font-weight: 600;
+    color: ${props=>props.theme["green-200"]};
+
+    @media (max-width: 768px) {
+        width: 100vw;
+        overflow: hidden;
+    }
 `
 
 export const SectionImage = styled.section`
+
     img {
         width: 21.875rem;
+    }
+
+    @media (max-width: 768px) {
+        img {
+            display: none;
+        }
     }
 
 `
@@ -37,6 +74,11 @@ export const HeaderBox = styled.div`
     justify-content: space-between;
 
     margin: 0 0 20rem;
+
+
+    @media (max-width: 768px) {
+        margin: 0 0 23rem;
+    }
 `
 
 export const MainBox = styled.main`
@@ -45,8 +87,10 @@ export const MainBox = styled.main`
 `
 
 export const MainSectionText = styled.section`
-
+    display: flex;
+    flex-direction: column;
     text-align: center;
+
     h1 {
         font-size: 4rem;
         text-align: center;
@@ -61,6 +105,14 @@ export const MainSectionText = styled.section`
         font-weight: bold;
         letter-spacing: 1px;
     }
+
+    @media (max-width:768px){
+        width: 100%;
+
+        h1{
+            font-size: 3rem;
+        }
+    }
 `
 
 export const MainSectionImage = styled.section`
@@ -72,6 +124,7 @@ export const ContactBox = styled.div`
     flex-direction: column;
     align-items: center;
     color: ${props=>props.theme.white};
+    text-align: center;
 
     margin: 0 0 6rem;
 

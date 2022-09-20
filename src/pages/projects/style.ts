@@ -11,12 +11,21 @@ export const Container = styled.div`
         color: ${props=>props.theme["green-200"]};
     }
 
+    @media (max-width: 768px) {
+        padding: 10rem 2rem 0;
+        overflow: hidden;
+    }
+
 `
 
 export const TextHeader = styled.section`
     font-size: 2rem;
     letter-spacing: 1px;
     color: ${props=>props.theme.white};
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 `
 
 export const SectionToProjects = styled.section`
@@ -26,6 +35,11 @@ export const SectionToProjects = styled.section`
     justify-content: center;
 
     margin: 4rem 0 0;
+
+    @media (max-width: 768px) {
+        margin: 4rem 0 4rem;
+    }
+
 `
 
 export const BoxToProjects = styled.div`
@@ -34,6 +48,7 @@ export const BoxToProjects = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     padding: 1rem;
     border-radius: 8px;
     transition: transform 0.4s, border 0.4s, box-shadow 0.6s;
@@ -41,6 +56,11 @@ export const BoxToProjects = styled.div`
     width: 29%;
 
     color: ${props=>props.theme.white};
+
+    @media (max-width: 768px) {
+        width: 100%;
+
+    }
 
     &:hover{
         transform: scale(1.07);
@@ -55,6 +75,7 @@ export const BoxToProjects = styled.div`
     h5 {
         font-size: 1.2rem;
         margin: 0.5rem 0;
+        text-align: center;
     }
 
     p{

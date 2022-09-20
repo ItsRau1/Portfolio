@@ -7,9 +7,11 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Roboto', 'sans-serif';
+
     }
     body {
         background: linear-gradient(126deg, rgba(0,11,7,1) 0%, rgba(1,47,30,1) 100%);
+        -webkit-font-smoothing: antialiased;
     }
     :focus{
         outline: 0;
