@@ -60,7 +60,7 @@ export const NavBar = styled.nav`
         gap: 4rem;
     }
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 768px){
 
     padding: 2rem 1rem;
     justify-content: center;
