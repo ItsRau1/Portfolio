@@ -42,7 +42,7 @@ export function Header() {
 
     return (
         <NavBar className={colorChange ? 'navbarColorChange' : 'navbar'}>
-            {(toggleMenu || screenWidth > 500 ) && (
+            {(toggleMenu || screenWidth > 768 ) && (
                             <ul>
                             <li>
                                     <Link to="/">
