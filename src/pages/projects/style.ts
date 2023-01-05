@@ -108,3 +108,8 @@ export const BoxToProjects = styled.div`
     }
 
 `
+
+export const BoxToLinks = styled.div`
+    display: flex;
+    gap: 1rem;
+`
